@@ -1,0 +1,413 @@
+:root{
+    --color-lightgray: #aaa9a9;
+    --color-darkgray: #707070;
+    --color-lightPurple: #cc23c1f3;
+    --color-black: #212529;
+    --color-button: #353131;
+    --color-heading: #505050;
+    --color-white: #fff;
+    --color-icons: #C5C3C5;
+}
+
+.team{
+    background-image: url('../images/team.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    z-index:1;
+}
+
+.team .overlay{
+    position: absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.team .caption-team{
+    padding: 6rem 0;
+}
+
+.team .caption-team .quote-icon{
+    color: var(--color-lightPurple);
+    font-size: 32px;
+    margin-bottom: 5rem;
+}
+
+.team .caption-team .quote-team{
+    color: var(--color-white);
+    font-size: 20px;
+    white-space: pre;
+}
+
+.team .person-team{
+    margin-top: 5rem;
+    color: var(--color-white);
+}
+
+.team .person-team img{
+    border-radius: 50%;
+    width: 5%;
+}
+
+.team .person-team h6{
+    font-size: 22px;
+}
+/* Team End */
+
+/* Blog Start */
+.blog{
+    margin: 5rem 0;
+}
+
+.blog .title-blog{
+    color: var(--color-heading);
+}
+
+.blog .title-blog::before,
+.blog .title-blog::after{
+    content:"";
+    display: inline-block;
+    border: 1px solid var(--color-lightgray);
+    width: 42.5%;
+    height: .5vh;
+    position: relative;
+    vertical-align: middle;
+}
+
+.blog .title-blog::before{
+    left: -.9%;
+}
+
+.blog .title-blog::after{
+    right: -.9%;
+}
+
+.blog .cards img{
+    width: 95%;
+}
+.blog .cards .body-cards h2{
+    color: var(--color-heading);
+    font-size: 30px;
+    margin-top: .5rem;
+}
+
+.blog .cards .body-cards p{
+    color: var(--color-lightgray);
+    font-size: 18px;
+    white-space: pre-line;
+    line-height: 1.7rem;
+    margin-top: -1.5rem;
+}
+
+.blog .cards .body-cards .buttons-blog .btn{
+    color: var(--color-button);
+    border: 1px solid var(--color-button);
+    padding: .3rem 1rem;
+    border-radius: 0;
+    transition: all.3s ease-in-out;
+}
+
+.blog .cards .body-cards .buttons-blog .btn:hover{
+    background-color: var(--color-button);
+    color: var(--color-white);
+}
+
+.blog .cards .body-cards .buttons-blog .less{
+    display: none;
+}
+
+/* Blog End */
+
+
+
+
+
+
+
+
+
+
+/********* Media Query *********/
+
+/* Galaxy Flod */
+@media  (min-width:280px){
+    /* Team Start */
+    .team .caption-team{
+        padding: 3rem 0;
+    }
+    .team .caption-team .quote-team{
+        font-size: 12px;
+        white-space: normal;
+    }
+
+    .team .person-team img{
+        width: 18%;
+    }
+
+    .team .person-team h6{
+        font-size: 16px;
+    }
+    /* Team End */
+
+    /* Blog Start */
+    .blog{
+        text-align: center;
+    }
+    .blog .title-blog{
+        margin-bottom: -1rem;
+    }
+    .blog .title-blog:before,
+    .blog .title-blog:after{
+        width: 26%;
+    }
+    .blog .cards .body-cards h2{
+        font-size: 24px;
+        margin-bottom: 2rem;
+    }
+    .blog .cards .body-cards p{
+        font-size: 18px;
+        white-space: normal;
+    }
+
+    .blog .cards .body-cards .buttons-blog .btn{
+        padding: .3rem 2rem;
+    }
+    /* Blog End */
+}
+
+
+/* Moto G4 */
+@media  (min-width:360px){
+    /* Team Start */
+    .team .caption-team .quote-team{
+        font-size: 15px;
+    }
+
+    .team .person-team img{
+        width: 16%;
+    }
+
+    .team .person-team h6{
+        font-size: 17px;
+    }
+    /* Team End */
+
+    /* Blog Start */
+    .blog .title-blog:before,
+    .blog .title-blog:after{
+        width: 29%;
+    }
+    .blog .cards .body-cards h2{
+        font-size: 26px;
+        margin-bottom: 3rem;
+    }
+    .blog .cards .body-cards p{
+        font-size: 19px;
+    }
+    /* Blog End */
+}
+
+/* Iphone X */
+@media  (min-width:375px){
+    /* Team Start */
+    .team .caption-team{
+        padding: 5rem 0;
+    }
+
+    .team .caption-team .quote-team{
+        font-size: 16px;
+    }
+
+    .team .person-team img{
+        width: 18%;
+    }
+
+    .team .person-team h6{
+        font-size: 20px;
+    }
+    /* Team End */
+
+    /* Blog Start */
+    .blog .cards .body-cards h2{
+        font-size: 29px;
+        margin-bottom: 4rem;
+    }
+    .blog .cards .body-cards p{
+        font-size: 20px;
+    }
+    /* Blog End */
+}
+
+/* pixel 2 */
+@media  (min-width:411px){
+    /* Team Start */
+    .team .caption-team .quote-team{
+        font-size: 18px;
+    }
+
+    .team .person-team img{
+        width: 16%;
+    }
+
+    .team .person-team h6{
+        font-size: 19px;
+    }
+    /* Team End */
+
+    /* Blog Start */
+    .blog .cards .body-cards p{
+        font-size: 17px;
+        line-height: 1.8rem;
+    }
+    /* Blog End */
+}
+
+/* mobile:483 */
+@media  (min-width:483px){
+    /* Team Start */
+    .team .caption-team .quote-team{
+        font-size: 15px;
+        margin-top: -2rem;
+    }
+
+    .team .person-team img{
+        width: 13%;
+        margin-top: -2rem;
+    }
+
+    .team .person-team h6{
+        font-size: 18px;
+    }
+    /* Team End */
+
+    /* Blog Start */
+    .blog .title-blog:before,
+    .blog .title-blog:after{
+        width: 33%;
+    }
+    .blog .cards .body-cards h2{
+        font-size: 35px;
+        margin-bottom: 3rem;
+    }
+    .blog .cards .body-cards p{
+        font-size: 18px;
+    }
+    /* Blog End */
+}
+
+/* Surface Duo */
+@media  (min-width:540px){
+    /* Team Start */
+    .team .caption-team .quote-team{
+        font-size: 23px;
+    }
+
+    .team .person-team img{
+        width: 13%;
+    }
+
+    .team .person-team h6{
+        font-size: 20px;
+    }
+    /* Team End */
+
+    /* Blog Start */
+    .blog .cards .body-cards h2{
+        font-size: 36px;
+        margin-bottom: 3rem;
+    }
+    .blog .cards .body-cards p{
+        font-size: 20px;
+    }
+    /* Blog End */
+}
+
+/* Ipad*/
+@media  (min-width:768px){
+    /* Team Start */
+    .team{
+        padding: 9rem 0;
+    }
+    .team .caption-team .quote-team{
+        font-size: 24.5px;
+    }
+
+    .team .person-team img{
+        width: 13%;
+        margin-top: 1rem;
+    }
+
+    .team .person-team h6{
+        font-size: 24px;
+    }
+    /* Team End */
+
+    /* Blog Start */
+    .blog .cards .body-cards h2{
+        font-size: 48px;
+        margin-bottom: 3rem;
+    }
+    .blog .cards .body-cards p{
+        font-size: 24px;
+        line-height: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .blog .cards .body-cards .buttons-blog .btn{
+        padding: .4rem 3rem;
+    }
+    /* Blog End */
+}
+
+/* Desktop */
+@media  (min-width:1280px) {
+    /* Team Start */
+    .team{
+        padding:4rem 0;
+    }
+    .team .caption-team .quote-team{
+        font-size: 20px;
+        white-space: pre;
+    }
+
+    .team .person-team img{
+        width: 5%;
+    }
+
+    .team .person-team h6{
+        font-size: 22px;
+    }
+    /* Team End */
+
+     /* Blog Start */
+    .blog{
+        text-align: left;
+    }
+    .blog .title-blog{
+        margin-bottom: -1rem;
+    }
+    .blog .title-blog:before,
+    .blog .title-blog:after{
+        width: 41%;
+    }
+    .blog .cards .body-cards h2{
+        font-size: 25px;
+        margin-bottom: 2rem;
+    }
+    .blog .cards .body-cards p{
+        font-size: 16px;
+        white-space: pre-line;
+    }
+
+    .blog .cards .body-cards .buttons-blog .btn{
+        padding: .3rem 1rem;
+    }
+    /* Blog End */
+}
+
+
